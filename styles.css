@@ -214,3 +214,48 @@ iframe {
     padding: 40px 15px;
   }
 }
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 15px;
+    /* diminuir padding para ocupar menos espaço */
+    background: rgba(30, 30, 47, 0.9);
+    /* fundo um pouco transparente */
+    font-size: 0.9rem;
+    /* diminuir tamanho geral das fontes no header */
+  }
+
+  .logo {
+    width: 40px;
+    /* diminuir tamanho do logo */
+    margin-bottom: 10px;
+    /* espaço entre logo e nav */
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav a {
+    margin: 6px 0;
+    /* menos espaçamento vertical */
+    padding: 8px 0;
+    border-bottom: 1px solid #555;
+    /* borda mais suave */
+    width: 100%;
+    text-align: left;
+    font-weight: 600;
+    color: #ddd;
+    /* cor mais clara para menos impacto */
+    transition: color 0.3s ease;
+  }
+
+  nav a:hover {
+    color: #f9c34d;
+    /* destaque no hover continua */
+  }
+}
