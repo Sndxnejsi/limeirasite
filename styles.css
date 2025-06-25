@@ -112,7 +112,7 @@ h2 {
   padding: 12px 25px;
   border-radius: 30px;
   text-decoration: none;
-  transition: background 0.3s;
+  transition:  0.3s;
 }
 
 .socials a:hover {
@@ -257,5 +257,75 @@ iframe {
   nav a:hover {
     color: #f9c34d;
     /* destaque no hover continua */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* HEADER padrão (telas grandes) */
+header {
+  background: #1e1e2f;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  width: 60px;
+  height: auto;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f9c34d;
+}
+
+/* ===== ESTILO RESPONSIVO PARA CELULARES ===== */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .logo {
+    width: 40px;
+    margin-bottom: 5px;
+  }
+
+  nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav a {
+    padding: 8px 0;
+    border-bottom: 1px solid #333;
+    width: 100%;
+    color: #eee;
+    font-size: 0.95rem;
   }
 }
